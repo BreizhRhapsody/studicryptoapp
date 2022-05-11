@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Fix composer.json">
+    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Update Procfile UTF16 to 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +184,7 @@
       <workItem from="1652258783859" duration="4000" />
       <workItem from="1652258825208" duration="3461000" />
       <workItem from="1652262325633" duration="894000" />
-      <workItem from="1652263234883" duration="13837000" />
+      <workItem from="1652263234883" duration="14326000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1652260351390</created>
@@ -276,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652276176647</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update Procfile UTF16 to 8">
+      <created>1652279117972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652279117972</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +357,8 @@
     <MESSAGE value="Fix composer" />
     <MESSAGE value="Fix problem push heroku" />
     <MESSAGE value="Fix composer.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix composer.json" />
+    <MESSAGE value="Update Procfile UTF16 to 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Procfile UTF16 to 8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

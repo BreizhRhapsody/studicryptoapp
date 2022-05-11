@@ -16,7 +16,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
 
 class HomeController extends AbstractController
 {
-    #[Route('/home', name: 'app_home')]
+    #[Route('/', name: 'app_home')]
 
     // Function for the home part and get/use infos from the CoinMarketCap API
 
