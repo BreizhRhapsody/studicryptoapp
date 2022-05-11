@@ -44,8 +44,8 @@
     "require": {
         "php": ">=8.0.2",
         "ext-ctype": "*",
-        "ext-iconv": "*",
         "ext-curl": "*",
+        "ext-iconv": "*",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.6",
         "doctrine/doctrine-migrations-bundle": "^3.2",
