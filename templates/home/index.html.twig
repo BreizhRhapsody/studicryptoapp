@@ -1,20 +1,96 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Crypto Tracker{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="container div-border ">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/manon/Desktop/studicrypto/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/manon/Desktop/studicrypto/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <header>
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col">
+                    <h1>Crypto Tracker</h1>
+                </div>
+                <div class="col link text-right pt-3">
+                    <ul class="list-unstyled d-inline-flex align-items-center">
+
+                        <!-- Button to refresh the page -->
+
+                        <li><button class="btn btn-success mr-3"><em class="fa fa-hourglass-end" onClick="window.location.reload();"></em></button></li>
+
+                        <!-- Path to the page for add transaction -->
+
+                        <li><a href="{{ path('app_add') }}"><em class="fa fa-plus mx-3 pl-3"></em></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Alert messages after adding/deleting a transaction -->
+
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+
+        {% for message in app.flashes('error') %}
+            <div class="alert alert-success fade show mt-3 text-center" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <!-- Total profit and path to the acquired cryptocurrencies valuation chart -->
+
+        <main class="container-profit">
+            <div class="profit">
+                <h3 id="mydesc"><a href="{{ path('app_chart') }}" style="text-decoration: none; color: white; font-family:'Space Grotesk', sans-serif">
+                        {{ userProfit }} €
+                    </a></h3>
+            </div>
+
+            <!-- List of transactions and arrows that let you know if it's time to sell or not -->
+
+            {% for crypto in cryptos %}
+                <table aria-describedby="mydesc" class="table table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col"><img src="{{ asset('img/' ~ crypto.name ~ '.svg') }}" alt="crypto icon" class="icon pr-3">{{ crypto.name }}</th>
+                        <th class="text-right" scope="col">
+                            {% for cryptoName in result|keys %}
+                                {% if cryptoName == crypto.name %}
+                                    {% if result[cryptoName]['quote']['EUR']['price'] > crypto.value %}
+                                        <em class="fa fa-long-arrow-alt-up text-success"></em>
+                                    {% elseif result[cryptoName]['quote']['EUR']['price'] < crypto.value %}
+                                        <em class="fa fa-long-arrow-alt-down text-danger"></em>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                            <!-- Icons to delete and have more information about the transaction with pop up to confirm -->
+
+                            <a href="{{ path('delete', {id: crypto.id}) }}" class="card-link confirmation" onclick="if (confirm('Cette transaction vous a coûté {{ crypto.total }}€ pour {{ crypto.qte }} crypto achetée\(s\) soit un coût unitaire de {{ crypto.value }}€')){return true;}else{event.stopPropagation(); event.preventDefault();}">
+                                <em class="fa fa-info-circle ml-3"></em>
+                            </a>
+
+                            <a href="{{ path('delete', {id: crypto.id}) }}" class="card-link confirmation" onclick="if (confirm('C\'est votre dernier mot ?')){return true;}else{event.stopPropagation(); event.preventDefault();}">
+                                <em class="fa fa-trash"></em>
+                            </a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                </table>
+            {% endfor %}
+        </main>
+
+    </div>
+
 {% endblock %}
