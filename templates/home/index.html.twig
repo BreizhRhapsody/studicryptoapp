@@ -62,7 +62,7 @@
                 <table aria-describedby="mydesc" class="table table-striped table-dark">
                     <thead>
                     <tr>
-                        <th scope="col"><img src="{{ asset('img/' ~ crypto.name ~ '.svg') }}" alt="crypto icon" class="icon pr-3">{{ crypto.name }}</th>
+                        <th scope="col"><img src="{{ asset('img/' ~ crypto.name ~ '.png') }}" alt="crypto icon" class="icon pr-3">{{ crypto.name }}</th>
                         <th class="text-right" scope="col">
                             {% for cryptoName in result|keys %}
                                 {% if cryptoName == crypto.name %}
