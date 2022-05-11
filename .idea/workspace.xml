@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Update base.index.twig and add images">
+    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Update images">
       <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ADA.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/AVAX.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/BNB.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/BTC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/BTC.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/ETH.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/LUNA.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/SOL.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/USDC.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/USDT.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/XRP.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/bg-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/SavesFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/studicrypto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studicrypto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +137,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
       <path value="$PROJECT_DIR$/vendor/symfony/ux-chartjs" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="290nH7ZviG7Hd6Kxjmuspfq5CRl" />
@@ -160,8 +152,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/manon/Desktop/studicrypto",
     "nodejs_package_manager_path": "npm",
@@ -186,7 +180,7 @@
       <workItem from="1652258783859" duration="4000" />
       <workItem from="1652258825208" duration="3461000" />
       <workItem from="1652262325633" duration="894000" />
-      <workItem from="1652263234883" duration="2486000" />
+      <workItem from="1652263234883" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1652260351390</created>
@@ -216,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652264511038</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update base.index.twig and add images">
+      <created>1652265919145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652265919145</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update images">
+      <created>1652265977009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652265977009</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
     <MESSAGE value="Add form and service" />
     <MESSAGE value="Update controllers and templates" />
     <MESSAGE value="Update base.index.twig and add images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update base.index.twig and add images" />
+    <MESSAGE value="Update images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

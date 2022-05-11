@@ -76,7 +76,7 @@
 
                             <!-- Icons to delete and have more information about the transaction with pop up to confirm -->
 
-                            <a href="{{ path('delete', {id: crypto.id}) }}" class="card-link confirmation" onclick="if (confirm('Cette transaction vous a coûté {{ crypto.total }}€ pour {{ crypto.qte }} crypto achetée\(s\) soit un coût unitaire de {{ crypto.value }}€')){return true;}else{event.stopPropagation(); event.preventDefault();}">
+                            <a href="{{ path('app_home', {id: crypto.id}) }}" class="card-link confirmation" onclick="if (confirm('Cette transaction vous a coûté {{ crypto.total }}€ pour {{ crypto.qte }} crypto achetée\(s\) soit un coût unitaire de {{ crypto.value }}€')){return true;}else{event.stopPropagation(); event.preventDefault();}">
                                 <em class="fa fa-info-circle ml-3"></em>
                             </a>
 
