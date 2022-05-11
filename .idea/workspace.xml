@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Fix composer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Fix problem push heroku" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +167,7 @@
       <workItem from="1652258783859" duration="4000" />
       <workItem from="1652258825208" duration="3461000" />
       <workItem from="1652262325633" duration="894000" />
-      <workItem from="1652263234883" duration="9959000" />
+      <workItem from="1652263234883" duration="10305000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1652260351390</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652274552725</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix problem push heroku">
+      <created>1652275238378</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652275238378</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +289,8 @@
     <MESSAGE value="Update css and add fixtures" />
     <MESSAGE value="Procfile" />
     <MESSAGE value="Fix composer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix composer" />
+    <MESSAGE value="Fix problem push heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix problem push heroku" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
