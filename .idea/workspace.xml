@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Update Procfile UTF16 to 8">
+    <list default="true" id="80316018-2e60-4906-ac6d-449b20c8cc8c" name="Changes" comment="Update DateTime in HomeController">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/manon/Desktop/studicrypto",
     "nodejs_package_manager_path": "npm",
@@ -184,7 +183,7 @@
       <workItem from="1652258783859" duration="4000" />
       <workItem from="1652258825208" duration="3461000" />
       <workItem from="1652262325633" duration="894000" />
-      <workItem from="1652263234883" duration="14326000" />
+      <workItem from="1652263234883" duration="14841000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1652260351390</created>
@@ -284,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652279117972</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update path home">
+      <created>1652279392569</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652279392569</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update DateTime in HomeController">
+      <created>1652279535483</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652279535483</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +371,9 @@
     <MESSAGE value="Fix problem push heroku" />
     <MESSAGE value="Fix composer.json" />
     <MESSAGE value="Update Procfile UTF16 to 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Procfile UTF16 to 8" />
+    <MESSAGE value="Update path home" />
+    <MESSAGE value="Update DateTime in HomeController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update DateTime in HomeController" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
